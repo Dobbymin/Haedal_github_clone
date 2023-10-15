@@ -1,167 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2e2e38;
+}
+
+div {
+    text-align: center;
+}
+
 .container {
+    height: 100vh;
+
+    max-width: 920px;
+
     display: flex;
-    height: 150px;
-    justify-content: flex-start;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin: 0 auto;
 }
 
-.container .profile {
-    padding-left: 10px;
-    padding-right: 15px;
-    width: 200px;
-    height: 50px;
+.header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #cccccc;
+
+    border-bottom: 1px solid #5c5c66;
+
+    height: 45px;
+
+    font-size: 24px;
 }
 
-.container .Layout-main {
-    border: 1px solid #d8dee3;
+.header h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.info a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.info a:hover {
+    color: #9eb9ee;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #2e2e38;
+    padding: 10px;
+    border-top: 1px solid #5c5c66;
+    position: sticky;
+    bottom: 0;
+}
+
+#user-input {
+    border: none;
     border-radius: 5px;
 
-    padding-right: 10px;
-    width: 100%;
-    height: 650px;
+    padding: 8px;
 
-    text-align: center;
-    /* background: #ffc93c; */
-}
-h1 {
-    padding-left: 40px;
-}
-.container .name {
-    padding-top: 5px;
+    flex: 9;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #ffffff;
+    background-color: #3f3f4c;
 }
 
-.image {
-    padding-top: 3px;
-}
-.image img {
-    border-radius: 10px;
-
-    width: 200px;
-    height: 270px;
+#user-input::placeholder {
+    color: #8e8e8e;
+    font-weight: 400;
 }
 
-.profile > .my_profile .name {
-    font-size: 22px;
-    font-weight: 600;
+.chat-container .info {
+    color: white;
 }
 
-.profile > .my_profile .info {
-    color: #666e77;
-}
+#send-button {
+    display: flex;
 
-.myButton {
-    margin-top: 5px;
+    align-items: center;
 
-    text-align: center;
-    padding-top: 7px;
-    /* width: 136px; */
-    width: 100%;
-    height: 22px;
-    background-color: #f7f8fa;
+    justify-content: center;
 
-    border-radius: 7px;
-    border: 1px solid #d7d8db;
+    padding: 8px 20px;
 
-    display: inline-block;
+    border: none;
+    border-radius: 5px;
 
     cursor: pointer;
-    color: black;
 
-    font-family: Arial;
-    font-size: 14px;
-    /* padding: 16px 31px; */
-    text-decoration: none;
-}
-.myButton:hover {
-    background-color: rgb(244, 243, 246);
-}
-.myButton:active {
-    position: relative;
-    top: 1px;
+    margin-left: 15px;
+
+    color: #ffffff;
+    background-color: #9eb9ee;
+
+    transition: all 0.3s ease;
 }
 
-.team {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 100;
-}
-.school i {
-    padding-right: 4px;
-    color: #656d76;
-}
-
-.location i {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    padding-right: 4px;
-    color: #656d76;
-}
-
-.social {
-    padding-top: 15px;
-    padding-bottom: 10px;
-
-    color: black;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.social i {
-    font-size: 11px;
-    color: #656d76;
-}
-
-hr {
-    border: solid 0.5px #d8dee3;
-}
-#main {
-    padding-top: 5px;
-    padding-bottom: 3px;
-}
-.instagram {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-#study {
-    padding-top: 3px;
-    padding-bottom: 5px;
-}
-.instagram i {
-    color: #656d76;
-    padding-right: 4px;
-}
-.beakjoon {
-    padding-top: 10px;
-    width: 200px;
-}
-
-.intro > hr {
-    width: 90%;
-}
-
-.contents li {
-    padding-bottom: 5px;
-    list-style: none;
-}
-
-.activity > hr {
-    width: 90%;
-}
-
-#semester_1st {
-    font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 4px;
-}
-
-#semester_2nd {
-    font-weight: bold;
-    font-size: 20px;
-
-    padding-top: 10px;
-    padding-bottom: 4px;
+#send-button:hover {
+    background-color: #6492ec;
 }
